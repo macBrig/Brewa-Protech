@@ -5,8 +5,6 @@ function App() {
   return (
     <div>
       {/* Header */}
-
-      {/* Hero Section */}
       <section
         className="bg-blue-500 text-white relative"
         style={{
@@ -17,77 +15,317 @@ function App() {
             "linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(/land-1.png) lightgray 50% / cover no-repeat",
         }}
       >
-        <header className=" text-white">
-          <div className="container mx-auto flex justify-between items-center">
-            <nav>
-              <ul className="flex">
-                <li className="ml-4">
-                  <a href="#hero" className="hover:text-gray-300">
-                    Home
-                  </a>
-                </li>
-                <li className="ml-4">
-                  <a href="#features" className="hover:text-gray-300">
-                    Rent
-                  </a>
-                </li>
-                <li className="ml-4">
-                  <a href="#features" className="hover:text-gray-300">
-                    Landlord
-                  </a>
-                </li>
-                <li className="ml-4">
-                  <a href="#features" className="hover:text-gray-300">
-                    Download App
-                  </a>
-                </li>
-                <li className="ml-4">
-                  <a href="#features" className="hover:text-gray-300">
-                    Sign Up
-                  </a>
-                </li>
-                <li className="ml-4">
-                  <a href="#features" className="hover:text-gray-300">
-                    Login
-                  </a>
-                </li>
-                {/* Add more navigation links here */}
-              </ul>
-            </nav>
+      
+      <header>
+      {/* <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <nav className="flex justify-between items-center">
+          <div className="flex space-x-4">
+            <a href="#" className="text-gray-500 hover:text-gray-900">Home</a>
+            <a href="#" className="text-gray-500 hover:text-gray-900">Rent</a>
+            <a href="#" className="text-gray-500 hover:text-gray-900">Landlord</a>
           </div>
-        </header>
-
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Smart Rental Service</h2>
+          <div className="flex space-x-4">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download APP</button>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign Up</button>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login</button>
+          </div>
+        </nav>
+        <h1 className="text-3xl font-bold text-gray-900">Smart Rental Service</h1>
+        <div className="flex justify-between items-center mt-4">
+          <div className="flex space-x-4">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">All</button>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Shared Room</button>
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Whole Apartment</button>
+          </div>
+          <input className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Search" />
         </div>
-        <div className="absolute inset-0 bg-cover bg-center" />
+      </div>
+     */}
+     {/* <div className="w-[1332px] h-[75px] justify-start items-center gap-[77px] inline-flex">
+    <div className="justify-start items-start gap-[79px] flex">
+        <div className="w-[774px] h-[50px] justify-start items-start gap-5 flex">
+            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
+                <div className="text-black text-2xl font-bold font-['Playfair Display']">Home</div>
+            </div>
+            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
+                <div className="text-black text-2xl font-bold font-['Playfair Display']">Rent</div>
+            </div>
+            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
+                <div className="text-black text-2xl font-bold font-['Playfair Display']">Landlord</div>
+            </div>
+            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
+                <div className="text-black text-2xl font-bold font-['Playfair Display']">Download APP</div>
+            </div>
+        </div>
+        <div className="justify-start items-start gap-[30px] flex">
+            <div className="h-12 px-[62px] py-2 bg-stone-200 rounded-[30px] justify-center items-center gap-2.5 flex">
+                <div className="text-white text-2xl font-bold font-['Playfair Display']">Sign Up</div>
+            </div>
+            <div className="h-12 px-[62px] py-2 bg-emerald-300 rounded-[30px] justify-center items-center gap-2.5 flex">
+                <div className="text-white text-2xl font-bold font-['Playfair Display']">Login</div>
+            </div>
+        </div>
+    </div>
+</div> */}
+
+
+<nav className="container mx-auto flex items-center justify-between p-4">
+        <a href="/" className="flex items-center">
+            <img src="/Asset/Logo/Logo_btn.svg" alt="Company Logo" className="w-[74px] h-[74px] rounded-[100px]"/>
+        </a>
+
+        <div className="text-black text-2xl font-bold font-['Playfair Display']">Home</div>
+            
+            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
+                <div className="text-black text-2xl font-bold font-['Playfair Display']">Rent</div>
+            </div>
+            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
+                <div className="text-black text-2xl font-bold font-['Playfair Display']">Landlord</div>
+            </div>
+{/* 
+        <div className="hidden md:flex items-center space-x-4">
+            <a href="#" className="text-white hover:text-gray-200">Home</a>
+            <a href="#" className="text-white hover:text-gray-200">Rent</a>
+            <a href="#" className="text-white hover:text-gray-200">Landlord</a>
+        </div> */}
+
+        <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
+                <div className="text-black text-2xl font-bold font-['Playfair Display']">Download APP</div>
+            </div>
+
+        
+{/* 
+        <div className="hidden md:flex items-center space-x-4">
+            <a href="#" className="text-white hover:text-gray-200">Sign Up</a>
+            <a href="#" className="text-white hover:text-gray-200">Login</a>
+        </div> */}
+        <div className="justify-start items-start gap-[30px] flex">
+            <div className="h-12 px-[62px] py-2 bg-stone-200 rounded-[30px] justify-center items-center gap-2.5 flex">
+                <div className="text-white text-2xl font-bold font-['Playfair Display']">Sign Up</div>
+            </div>
+            <div className="h-12 px-[62px] py-2 bg-emerald-300 rounded-[30px] justify-center items-center gap-2.5 flex">
+                <div className="text-white text-2xl font-bold font-['Playfair Display']">Login</div>
+            </div>
+        </div>
+    
+    </nav>
+
+    <div className="w-[532.30px] h-[234px] text-black text-[57.83px] font-medium font-['Poppins']">Smart Rental Service</div>
+
+    <div className="absolute bottom-0 left-0 right-0 pb-4">
+        <div className="container mx-auto flex justify-between items-center">
+            <div className="flex-grow max-w-xl bg-white shadow-md rounded-lg flex items-center p-2">
+                <input type="text" className="flex-grow px-4 py-2 w-full" placeholder="Name of Area, District, Commute"/>
+                <button className="px-4 py-2 bg-blue-500 text-white rounded-lg">Search</button>
+            </div>
+
+            <div className="hidden md:flex items-center space-x-2">
+                <button className="px-4 py-2 rounded-lg text-white bg-transparent border border-white">All</button>
+                <button className="px-4 py-2 rounded-lg text-white bg-transparent border border-white">Shared Room</button>
+                <button className="px-4 py-2 rounded-lg text-white bg-transparent border border-white">Whole Apartment</button>
+            </div>
+        </div>
+    </div>
+
+    </header>
       </section>
 
+      {/* Hero Section */}
+
       {/* Features Section */}
-      <section className="py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Features</h2>
-          <div className="flex justify-center">
-            <div className="w-1/3 p-4">
-              <h3 className="text-xl font-semibold mb-2">Feature 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <section>
+        <div className="w-[1440px] h-[639px] relative">
+          <div className="w-[1440px] h-[639px] left-0 top-0 absolute bg-stone-200 bg-opacity-10" />
+          <div className="w-[357px] h-[515px] left-[160px] top-[29px] absolute flex-col justify-center items-center inline-flex">
+            <img
+              className="w-[357px] h-[515px] rounded-[40px]"
+              src="/Asset/Landing_Image/rent_Pic.jpeg"
+            />
+          </div>
+          <img
+            className="w-[357px] h-[515px] left-[541px] top-[27px] absolute rounded-[40px]"
+            src="/Asset/Landing_Image/cleaner.jpeg"
+          />
+          <div className="w-[357px] h-[515px] left-[923px] top-[29px] absolute flex-col justify-center items-center inline-flex">
+            <img
+              className="w-[357px] h-[515px] rounded-[40px]"
+              src="/Asset/Landing_Image/lad-landlord.webp"
+            />
+          </div>
+          <div className="w-[345px] h-[86px] p-2.5 left-[579px] top-[527px] absolute border flex-col justify-start items-start gap-2.5 inline-flex">
+            <div className="flex-col justify-start items-center flex">
+              <div className="flex-col justify-start items-center flex">
+                <div className="text-left text-black text-[32px] font-extrabold font-['Playfair Display']">
+                  House Keeping
+                </div>
+                <div className="text-center text-black font-normal font-['Georgia']">
+                  Cleaning | House Repair
+                </div>
+              </div>
             </div>
-            <div className="w-1/3 p-4">
-              <h3 className="text-xl font-semibold mb-2">Feature 2</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div className="w-[258px] h-[86px] p-2.5 left-[210px] top-[529px] absolute border flex-col justify-start items-start gap-2.5 inline-flex">
+            <div className="flex-col justify-start items-center flex">
+              <div className="flex-col justify-start items-center flex">
+                <div className="text-center text-black text-[32px] font-extrabold font-['Playfair Display']">
+                  Rental
+                </div>
+                <div className="text-center text-black font-normal font-['Georgia']">
+                  Shared | Whole Apartment
+                </div>
+              </div>
             </div>
-            <div className="w-1/3 p-4">
-              <h3 className="text-xl font-semibold mb-2">Feature 3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div className="w-[260px] h-[86px] p-2.5 left-[965px] top-[527px] absolute border flex-col justify-start items-start gap-2.5 inline-flex">
+            <div className="flex-col justify-start items-center flex">
+              <div className="flex-col justify-start items-center flex">
+                <div className="text-center text-black text-[32px] font-extrabold font-['Playfair Display']">
+                  Landlord
+                </div>
+                <div className="text-center text-black font-normal font-['Georgia']">
+                  House | Apartment to Rent
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="w-[1440px] h-[122px] px-40 py-[9px] bg-stone-200 bg-opacity-10 flex-col justify-start items-center inline-flex">
+          <div className="w-[1120px] h-[61px] text-center text-black text-5xl font-extrabold font-['Playfair Display']">
+            Full Rental Service
+          </div>
+          <div className="w-[212px] h-[29px] text-neutral-500 text-[21px] font-normal font-['Georgia']">
+            Efficiency Simplified
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="w-[1121px] h-[359px] justify-start items-center gap-[188px] inline-flex">
+          <img
+            className="w-[391px] h-[359px] shadow"
+            src="/Asset/Landing_Image/clean.jpeg"
+          />
+          <div className="w-[542px] h-[204px] border flex-col justify-start items-start gap-5 inline-flex">
+            <div className="w-[211px] h-[87px] text-black text-[57.83px] font-semibold font-['Playfair Display']">
+              Clean
+            </div>
+            <div className="w-[537px] h-[94px] text-neutral-500 text-[21px] font-normal font-['Poppins']">
+              Experience our exceptional cleaning services, where we
+              meticulously select our personnel, provide reliable tools, and
+              follow standardised processes.
+            </div>
+          </div>
+        </div>
+        <div className="w-[1120px] h-[355px] justify-start items-center gap-[133px] inline-flex">
+          <div className="flex-col justify-start items-start gap-[45px] inline-flex">
+            <div className="w-[319px] h-[72px] text-black text-[57.83px] font-semibold font-['Playfair Display']">
+              Convince{" "}
+            </div>
+            <div className="w-[532px] h-[94px] text-neutral-500 text-[21px] font-normal font-['Poppins']">
+              Experience our professional, convenient, and
+              transparent all-around home solutions. Let us simplify your life,
+              ensuring your home remains a haven of comfort and ease!
+            </div>
+          </div>
+          <img
+            className="w-[455px] h-[355px] shadow"
+            src="/Asset/Landing_Image/jij.jpeg"
+          />
+        </div>
+        <div className="w-[1120px] h-[355px] justify-start items-center gap-[133px] inline-flex">
+          <img
+            className="w-[455px] h-[355px] border"
+            src="/Asset/Landing_Image/comfott.jpeg"
+          />
+          <div className="flex-col justify-start items-start gap-[34px] inline-flex">
+            <div className="w-[532px] text-black text-[57.83px] font-semibold font-['Playfair Display']">
+              Personalised home{" "}
+            </div>
+            <div className="w-[532px] h-[94px] text-neutral-500 text-[21px] font-normal font-['Poppins']">
+              Unlock Endless Adventures. Stay Informed, Be Inspired, and Explore
+              Exclusive Rooms Tailored Just for You.
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2024 Your Company. All rights reserved.</p>
+      <footer>
+        <div className="w-[1440px] h-[250.89px] px-[159px] py-3.5 bg-stone-500 flex-col justify-start items-start gap-2.5 inline-flex">
+          <div className="flex-col justify-start items-center gap-[18px] flex">
+            <div className="flex-col justify-start items-center gap-1.5 flex">
+              <div className="justify-start items-start gap-3 inline-flex">
+                <div className="flex-col justify-start items-start inline-flex">
+                  <div className="flex-col justify-start items-start gap-[5px] flex">
+                    <img
+                      className="w-[74px] h-[74px] rounded-[100px]"
+                      src="/Asset/Logo/Logo_btn.svg"
+                    />
+                    <div className="w-[358px] h-[65px] text-white text-sm font-normal font-['Inter']">
+                      Embark on seamless adventures with us.
+                    </div>
+                  </div>
+                  <div className="w-40 justify-start items-start gap-[39px] inline-flex">
+                    <div className="w-[27.75px] h-[27.75px] relative" />
+                    <div className="w-[37px] h-[37px] relative" />
+                  </div>
+                </div>
+                <div className="justify-start items-start gap-[117px] flex">
+                  <div className="w-[129px] h-[153px] relative">
+                    <div className="w-[84px] left-[1px] top-[39px] absolute text-center text-white text-xs font-medium font-['Poppins']">
+                      Privacy Policy
+                    </div>
+                    <div className="w-24 left-0 top-[63px] absolute text-center text-white text-xs font-medium font-['Poppins']">
+                      Data Collection{" "}
+                    </div>
+                    <div className="w-[49px] left-[1px] top-[87px] absolute text-center text-white text-xs font-medium font-['Poppins']">
+                      Cookies
+                    </div>
+                    <div className="w-[111px] left-[1px] top-[111px] absolute text-center text-white text-xs font-medium font-['Poppins']">
+                      Security Measures
+                    </div>
+                    <div className="w-[102px] left-[1px] top-[135px] absolute text-center text-white text-xs font-medium font-['Poppins']">
+                      Third-Party Links
+                    </div>
+                    <div className="left-[1px] top-0 absolute text-center text-white text-lg font-medium font-['Poppins']">
+                      Privacy Terms
+                    </div>
+                  </div>
+                  <div className="w-[203px] h-[105px] relative">
+                    <div className="w-[103px] left-[2px] top-[39px] absolute text-center text-white text-xs font-medium font-['Poppins']">
+                      Terms of Service
+                    </div>
+                    <div className="w-[119px] left-[2px] top-[63px] absolute text-center text-white text-xs font-medium font-['Poppins']">
+                      Booking Conditions
+                    </div>
+                    <div className="w-[105px] left-0 top-[87px] absolute text-center text-white text-xs font-medium font-['Poppins']">
+                      User Agreement
+                    </div>
+                    <div className="left-[2px] top-0 absolute text-center text-white text-lg font-medium font-['Poppins']">
+                      Terms and Conditions
+                    </div>
+                  </div>
+                  <div className="w-[185px] h-[81px] relative">
+                    <div className="w-[70px] left-0 top-[39px] absolute text-center text-white text-xs font-medium font-['Poppins']">
+                      Contact Us
+                    </div>
+                    <div className="w-28 left-0 top-[63px] absolute text-center text-white text-xs font-medium font-['Poppins']">
+                      Customer Support{" "}
+                    </div>
+                    <div className="left-0 top-0 absolute text-center text-white text-lg font-medium font-['Poppins']">
+                      Contact Information
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[1111px] h-[0px] border border-white"></div>
+            </div>
+            <div className="text-center text-white text-base font-normal font-['Inter']">
+              © 2024 Berwa Protech. All rights reserved
+            </div>
+          </div>
         </div>
       </footer>
     </div>
