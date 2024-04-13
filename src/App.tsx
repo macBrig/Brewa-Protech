@@ -6,7 +6,7 @@ function App() {
     <div>
       {/* Header */}
       <section
-        className="bg-blue-500 text-white relative"
+        className="flex flex-col min-h-screen"
         style={{
           width: "100%",
           height: "80vh",
@@ -15,124 +15,100 @@ function App() {
             "linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(/land-1.png) lightgray 50% / cover no-repeat",
         }}
       >
-      
-      <header>
-      {/* <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <nav className="flex justify-between items-center">
-          <div className="flex space-x-4">
-            <a href="#" className="text-gray-500 hover:text-gray-900">Home</a>
-            <a href="#" className="text-gray-500 hover:text-gray-900">Rent</a>
-            <a href="#" className="text-gray-500 hover:text-gray-900">Landlord</a>
-          </div>
-          <div className="flex space-x-4">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download APP</button>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign Up</button>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login</button>
-          </div>
-        </nav>
-        <h1 className="text-3xl font-bold text-gray-900">Smart Rental Service</h1>
-        <div className="flex justify-between items-center mt-4">
-          <div className="flex space-x-4">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">All</button>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Shared Room</button>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Whole Apartment</button>
-          </div>
-          <input className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Search" />
-        </div>
-      </div>
-     */}
-     {/* <div className="w-[1332px] h-[75px] justify-start items-center gap-[77px] inline-flex">
-    <div className="justify-start items-start gap-[79px] flex">
-        <div className="w-[774px] h-[50px] justify-start items-start gap-5 flex">
-            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
-                <div className="text-black text-2xl font-bold font-['Playfair Display']">Home</div>
-            </div>
-            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
-                <div className="text-black text-2xl font-bold font-['Playfair Display']">Rent</div>
-            </div>
-            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
-                <div className="text-black text-2xl font-bold font-['Playfair Display']">Landlord</div>
-            </div>
-            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
-                <div className="text-black text-2xl font-bold font-['Playfair Display']">Download APP</div>
-            </div>
-        </div>
-        <div className="justify-start items-start gap-[30px] flex">
-            <div className="h-12 px-[62px] py-2 bg-stone-200 rounded-[30px] justify-center items-center gap-2.5 flex">
-                <div className="text-white text-2xl font-bold font-['Playfair Display']">Sign Up</div>
-            </div>
-            <div className="h-12 px-[62px] py-2 bg-emerald-300 rounded-[30px] justify-center items-center gap-2.5 flex">
-                <div className="text-white text-2xl font-bold font-['Playfair Display']">Login</div>
-            </div>
-        </div>
-    </div>
-</div> */}
-
-
-<nav className="container mx-auto flex items-center justify-between p-4">
-        <a href="/" className="flex items-center">
-            <img src="/Asset/Logo/Logo_btn.svg" alt="Company Logo" className="w-[74px] h-[74px] rounded-[100px]"/>
-        </a>
-
-        <div className="text-black text-2xl font-bold font-['Playfair Display']">Home</div>
+        <header >
+          <nav className="max-w-7xl mx-auto flex justify-between items-center">
             
+            <a href="/" className="flex items-center">
+              <img
+                src="/Asset/Logo/Logo_btn.svg"
+                alt="Company Logo"
+                className="w-[74px] h-[74px] rounded-[100px]"
+              />
+            </a>
+
+            <div className="hidden sm:flex gap-8 text-black text-2xl font-bold font-['Playfair Display']">
+              Home
+            </div>
+
             <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
-                <div className="text-black text-2xl font-bold font-['Playfair Display']">Rent</div>
+              <div className="text-black text-2xl font-bold font-['Playfair Display']">
+                Rent
+              </div>
             </div>
             <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
-                <div className="text-black text-2xl font-bold font-['Playfair Display']">Landlord</div>
+              <div className="text-black text-2xl font-bold font-['Playfair Display']">
+                Landlord
+              </div>
             </div>
-{/* 
+            {/* 
         <div className="hidden md:flex items-center space-x-4">
             <a href="#" className="text-white hover:text-gray-200">Home</a>
             <a href="#" className="text-white hover:text-gray-200">Rent</a>
             <a href="#" className="text-white hover:text-gray-200">Landlord</a>
         </div> */}
 
-        <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
-                <div className="text-black text-2xl font-bold font-['Playfair Display']">Download APP</div>
+            <div className="px-[41px] py-[9px] bg-zinc-300 bg-opacity-0 justify-center items-center gap-2.5 flex">
+              <div className="text-black text-2xl font-bold font-['Playfair Display']">
+                Download APP
+              </div>
             </div>
 
-        
-{/* 
+            {/* 
         <div className="hidden md:flex items-center space-x-4">
             <a href="#" className="text-white hover:text-gray-200">Sign Up</a>
             <a href="#" className="text-white hover:text-gray-200">Login</a>
         </div> */}
-        <div className="justify-start items-start gap-[30px] flex">
-            <div className="h-12 px-[62px] py-2 bg-stone-200 rounded-[30px] justify-center items-center gap-2.5 flex">
-                <div className="text-white text-2xl font-bold font-['Playfair Display']">Sign Up</div>
+            <div className="hidden sm:flex gap-4 justify-start items-start gap-[30px] flex">
+              <div className="h-12 px-[62px] py-2 bg-stone-200 rounded-[30px] justify-center items-center gap-2.5 flex">
+                <div className="text-white text-2xl font-bold font-['Playfair Display']">
+                  Sign Up
+                </div>
+              </div>
+              <div className="h-12 px-[62px] py-2 bg-emerald-300 rounded-[30px] justify-center items-center gap-2.5 flex">
+                <div className="text-white text-2xl font-bold font-['Playfair Display']">
+                  Login
+                </div>
+              </div>
             </div>
-            <div className="h-12 px-[62px] py-2 bg-emerald-300 rounded-[30px] justify-center items-center gap-2.5 flex">
-                <div className="text-white text-2xl font-bold font-['Playfair Display']">Login</div>
+          </nav>
+
+          <div className="w-[600.30px] h-[300px] text-black text-[57.83px] font-medium font-['Playfair Display']">
+            Smart Rental Service
+          </div>
+
+          <div className="absolute bottom-0 left-0 right-0 pb-4">
+            <div className="container mx-auto flex justify-between items-center">
+              <div className="hidden md:flex items-center space-x-2">
+                <button className="px-4 py-2 rounded-lg text-white bg-transparent border border-white">
+                  All
+                </button>
+                <button className="px-4 py-2 rounded-lg text-white bg-transparent border border-white">
+                  Shared Room
+                </button>
+                <button className="px-4 py-2 rounded-lg text-white bg-transparent border border-white">
+                  Whole Apartment
+                </button>
+              </div>
+              <div className="flex-grow max-w-xl bg-white shadow-md rounded-lg flex items-center p-2">
+                <input
+                  type="text"
+                  className="flex-grow px-4 py-2 w-full"
+                  placeholder="Name of Area, District, Commute"
+                />
+                <button className="px-4 py-2 bg-blue-500 text-white rounded-lg">
+                  Search
+                </button>
+              </div>
             </div>
-        </div>
-    
-    </nav>
-
-    <div className="w-[532.30px] h-[234px] text-black text-[57.83px] font-medium font-['Poppins']">Smart Rental Service</div>
-
-    <div className="absolute bottom-0 left-0 right-0 pb-4">
-        <div className="container mx-auto flex justify-between items-center">
-            <div className="flex-grow max-w-xl bg-white shadow-md rounded-lg flex items-center p-2">
-                <input type="text" className="flex-grow px-4 py-2 w-full" placeholder="Name of Area, District, Commute"/>
-                <button className="px-4 py-2 bg-blue-500 text-white rounded-lg">Search</button>
-            </div>
-
-            <div className="hidden md:flex items-center space-x-2">
-                <button className="px-4 py-2 rounded-lg text-white bg-transparent border border-white">All</button>
-                <button className="px-4 py-2 rounded-lg text-white bg-transparent border border-white">Shared Room</button>
-                <button className="px-4 py-2 rounded-lg text-white bg-transparent border border-white">Whole Apartment</button>
-            </div>
-        </div>
-    </div>
-
-    </header>
+          </div>
+        </header>
       </section>
 
       {/* Hero Section */}
 
       {/* Features Section */}
+      {/* Main Content */}
+      <main className="flex-grow">
 
       <section>
         <div className="w-[1440px] h-[639px] relative">
@@ -251,9 +227,13 @@ function App() {
         </div>
       </section>
 
+
+      </main>
+
+
       {/* Footer */}
-      <footer>
-        <div className="w-[1440px] h-[250.89px] px-[159px] py-3.5 bg-stone-500 flex-col justify-start items-start gap-2.5 inline-flex">
+      <footer className="bg-stone-500 text-white p-4">
+        <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
           <div className="flex-col justify-start items-center gap-[18px] flex">
             <div className="flex-col justify-start items-center gap-1.5 flex">
               <div className="justify-start items-start gap-3 inline-flex">
