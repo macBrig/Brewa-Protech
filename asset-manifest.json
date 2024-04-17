@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Brewa-Protech/static/css/main.ebd4b7f3.css",
+    "main.js": "/Brewa-Protech/static/js/main.74d02822.js",
+    "static/js/453.ed3810f9.chunk.js": "/Brewa-Protech/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/Brewa-Protech/index.html",
+    "main.ebd4b7f3.css.map": "/Brewa-Protech/static/css/main.ebd4b7f3.css.map",
+    "main.74d02822.js.map": "/Brewa-Protech/static/js/main.74d02822.js.map",
+    "453.ed3810f9.chunk.js.map": "/Brewa-Protech/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebd4b7f3.css",
+    "static/js/main.74d02822.js"
+  ]
+}
